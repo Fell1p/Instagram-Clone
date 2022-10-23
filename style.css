@@ -1,0 +1,101 @@
+:root{
+    --fundo: rgb(241, 241, 241);
+}
+
+body {
+    background: var(--fundo);
+}
+
+.navbar {
+    background-color: var(--fundo);
+    width: 100%;
+    height: 56px;
+    margin-bottom: 20px;
+}
+
+/*Conteiner envolverndo toda a pag*/
+.container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+}
+
+/*Contaner envolvendo conteudo + carrossel*/
+.container-conteudo{
+    background-color: var(--fundo);
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.carrosselECard{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 8px;
+}
+
+.carrossel{
+    background-color: white;
+    width: 60%;
+    height: 90px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    
+}
+
+/*card*/
+.card{
+    background-color: antiquewhite;
+    width: 60%;
+    height: 600px;
+    border-radius: 8px;
+}
+
+.card-cabecalho{
+    background-color: white;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.img-texto{
+    display: flex;
+    align-items: center;
+}
+
+.img-usuario{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.pontos{
+    width: 20px;
+    justify-content: flex-end;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.card-corpo{
+    height: 500px;
+}
+
+.reacoes{
+    background-color: aqua;
+    height: 80px;
+}
+
+/*Caixa de informações*/
+.info{
+    background-color: rgb(165, 6, 6);
+    width: 40%;
+}
+
+
