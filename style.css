@@ -1,18 +1,74 @@
 :root{
     --fundo: rgb(241, 241, 241);
+    --bordas: rgb(204, 202, 202);
 }
 
 body {
     background: var(--fundo);
 }
 
-.navbar {
-    background-color: var(--fundo);
-    width: 100%;
-    height: 56px;
-    margin-bottom: 20px;
-}
 
+/*Navbar*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1.5px solid rgb(219, 219, 219);
+    position: fixed;
+    height: 75px;
+  }
+  
+  .navbar_menu {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    max-width: 900px;
+    padding: 20px;
+    margin: auto;
+  }
+  
+  .navbar_instagram {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar_instagram a {
+    margin: 8px;
+  }
+  
+  .navbar_pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 268px;
+    height: 36px;
+    background: #efefef;
+    padding: 0px 25px;
+    border-radius: 8px;
+  }
+  
+  .navbar_pesquisa input {
+    font-weight: 300;
+    margin-left: 5px;
+    border: none;
+    background: #efefef;
+    color: #8e8e8e;
+  }
+  
+  .navbar_icones {
+    max-width: 290px;
+  
+    display: flex;
+  }
+  
+  .navbar_icones a {
+    padding: 10px;
+  }
 /*Conteiner envolverndo toda a pag*/
 .container{
     width: 100vw;
@@ -26,6 +82,7 @@ body {
     width: 60%;
     display: flex;
     flex-direction: row;
+    margin-top: 100px;
 }
 
 .carrosselECard{
@@ -43,7 +100,7 @@ body {
     height: 90px;
     margin-bottom: 20px;
     border-radius: 8px;
-    
+    border: 1px solid var(--bordas);
 }
 
 /*card*/
@@ -52,6 +109,7 @@ body {
     width: 60%;
     height: 600px;
     border-radius: 8px;
+    border: 1px solid var(--bordas);
 }
 
 .card-cabecalho{
@@ -60,7 +118,7 @@ body {
     height: 60px;
     align-items: center;
     justify-content: space-between;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
 }
 
 .img-texto{
@@ -87,7 +145,7 @@ body {
     height: 500px;
 }
 
-.reacoes{
+.card-rodape{
     background-color: aqua;
     height: 80px;
 }
