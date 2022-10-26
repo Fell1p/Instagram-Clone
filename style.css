@@ -106,9 +106,8 @@ body {
 
 /*card*/
 .card{
-    background-color: antiquewhite;
     height: auto;
-    width: 90%;
+    width: 92%;
     border-radius: 8px;
     border: 1px solid var(--bordas);
 }
@@ -120,6 +119,10 @@ body {
     align-items: center;
     justify-content: space-between;
     border-radius: 8px 8px 0 0;
+}
+
+.p1{
+  font: 12px;
 }
 
 .img-texto{
@@ -151,7 +154,7 @@ body {
   display: flex;
   height: auto;
   align-items: center;
-  padding: 8px;
+  padding: 12px 12px 0 12px;
   flex-direction: column;
 }
 
@@ -219,23 +222,31 @@ body {
 .card-rodape__icones_interacoes{
   width: 100%;
   display: flex;
-  margin-top: 10px;
+  margin-top: 11px;
   flex-direction: column;
 }
 
 .curtidas{
-  font-size: 13px;
+  font-size: 13.5px;
   cursor: pointer;
+  margin-top: 5px;
 }
 
 .card-rodape__legenda{
-  margin-top: 10px;
-  font-size: 13px;
+  margin-top: 11px;
+  font-size: 13.5px;
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+
+strong{
+  font-weight: 500;
 }
 
 .card-rodape__comentarios{
-  margin-top: 10px;
-  font-size: 13px;
+  margin-top: 11px;
+  font-size: 13.5px;
   cursor: pointer;
   opacity: 0.7;
 }
@@ -243,7 +254,7 @@ body {
 .card-rodape__interacoes_horaETraducao{
   display: flex;
   flex-direction: row;
-  margin-top: 10px;
+  margin-top: 11px;
   align-items: center;
 }
 
@@ -256,12 +267,42 @@ body {
 .rodape__interacoes_traducao{
   margin-left: 10px;
   font-size: 11px;
-  font-weight: bolder;
+  font-weight: 500;
   cursor: pointer;
 }
 
-.strong{
-  font-weight: bolder;
+.card-rodape__input{
+  display: flex;  
+  width: 100%;
+  padding: 15px 0 15px 0;
+  justify-content: space-between;
+  margin-top: 11px;
+  border-top: 1px solid #e7e7e7;
+  
+}
+
+.card-rodape__input input{
+  border: none;
+ 
+}
+
+.card-rodape__input__icone-coment{
+  display: flex;
+}
+
+.input-card{
+  margin-left: 15px;
+}
+
+.input-card:focus{
+  outline: 0;
+}
+
+.btn-rodape{
+  background-color: white;
+  border: none;
+  color: #b6e1fd;
+  font-weight: 500;
 }
 
 /*Caixa de sugestões*/
