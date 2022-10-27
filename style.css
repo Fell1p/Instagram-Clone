@@ -95,13 +95,34 @@ body {
     border-radius: 8px;
 }
 
+/*Carrossel*/
 .carrossel{
     background-color: white;
-    width: 90%;
+    width: 92%;
     height: 90px;
     margin-bottom: 20px;
     border-radius: 8px;
     border: 1px solid var(--bordas);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pessoas{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin: auto;	
+  border: double 2px transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, red, blue);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.carrossel-nomePessoa{
+  font-size: 5px;
+  text-align: center;
 }
 
 /*card*/
@@ -196,8 +217,27 @@ body {
   cursor: pointer;
 }
 
+.icone-salvar{
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.icone-salvar_pintado{
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  display: none;
+}
+
 .mostrar{
   display: flex;
+}
+
+.esconder{
+  display: none;
 }
 
 .icone-curtir:hover{
