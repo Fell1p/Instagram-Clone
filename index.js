@@ -21,7 +21,7 @@ function salvar(){
     salvarPintado.classList.add("mostrar")
 }
 
-function descurtir(){
+function remover(){
     salvarBranco.classList.remove("esconder")
     salvarPintado.classList.remove("mostrar")
 }
